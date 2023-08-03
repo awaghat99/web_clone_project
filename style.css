@@ -209,6 +209,13 @@ footer {
     width: 20%
 }
 
+.row {
+    display: none;
+    border-bottom: 1px solid #a4a7b0;
+    color:#a4a7b0;
+    padding:10px 0
+}
+
 .social-logo {
     width: 80%;
     margin: 0 auto;
@@ -240,5 +247,18 @@ footer {
     .card {
         width: 45%;
         margin: 2% 0;
+    }
+
+    .column {
+        display: none;
+    }
+
+    .column-holder {
+        flex-direction: column;
+        border: none;
+    }
+
+    .row {
+        display: block;
     }
 }

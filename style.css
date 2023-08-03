@@ -104,6 +104,7 @@ nav a {
 .card-holder {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -234,5 +235,10 @@ footer {
 
     nav img {
         width: 50px;
+    }
+
+    .card {
+        width: 45%;
+        margin: 2% 0;
     }
 }

@@ -27,11 +27,9 @@ body {
 }
 
 header {
-    background-image: url("./images/wallpaper.jpg");
-    background-size: cover;
-    height: 100vh;
     position: relative;
     z-index: 0;
+    overflow: hidden;
     top: -20px;
     padding-bottom: 50px;
 }
@@ -43,8 +41,18 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover; 
+    z-index: -2; 
 }
 
 nav {
@@ -246,7 +254,6 @@ footer {
     .plan-holder {
         width: 90%;
         margin: 20% auto;
-        border: 1px solid #1CE582;
         font-size: 10px;
     }
 

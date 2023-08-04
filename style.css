@@ -31,7 +31,7 @@ header {
     background-size: cover;
     height: 100vh;
     position: relative;
-    z-index: -2;
+    z-index: 0;
     top: -20px;
     padding-bottom: 50px;
 }
@@ -57,7 +57,14 @@ nav a {
     color: white;
     font-size: 15px;
     margin: 30px;
-    text-decoration: none; 
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: background-color 0.5s
+}
+
+nav a:hover {
+    background-color:#323843;
 }
 
 .plan-holder {
@@ -85,9 +92,15 @@ nav a {
 .plan-button {
     padding: 15px 80px;
     font-family: sans-serif;
-    background-color: #1CE582;
+    background-color: rgb(28, 229, 130);
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s
+}
+
+.plan-button:hover {
+    background-color:rgba(28, 229, 130, 0.7)
 }
 
 .heading {
@@ -108,6 +121,7 @@ nav a {
 }
 
 .card {
+
     position: relative;
     width: 23%;
     height: 75vh;
